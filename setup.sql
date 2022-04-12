@@ -1,19 +1,13 @@
-CREATE TABLE scp (
+CREATE TABLE pm (
  _id INTEGER  PRIMARY KEY NOT NULL,
  name TEXT NOT NULL,
+ health INTEGER,
  type TEXT,
- containmentClass TEXT,
- disruptionClass TEXT,
- riskClass TEXT,
- groupsofinterest TEXT,
- strength INTEGER,
- dexterity INTEGER,
- constitution INTEGER,
- wisdom INTEGER,
- intelligence INTEGER,
- charisma INTEGER,
- realityb INTEGER,
- mindb INTEGER,
- egob INTEGER  ,
- descrition TEXT
-)
+ stage INTEGER,
+ retreat INTEGER,
+ year TEXT);
+CREATE TABLE energy (
+ _id INTEGER  PRIMARY KEY NOT NULL,
+ type TEXT NOT NULL,
+ year TEXT
+ );
